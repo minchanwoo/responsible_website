@@ -167,7 +167,7 @@ button:active {
     width: 220px;
     height: 40px;
     margin: 5px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     outline: none;
     color: #191919;
     border-radius: 10px;
@@ -180,3 +180,29 @@ button:active {
     font-family: calibri;
     font-size: 15px;
 }
+
+.sign-in-page button {
+    width: 220px;
+    height: 40px;
+    font-family: calibri;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-page input:focus {
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-page button:hover {
+    background-color: #36d7a2;
+    color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+
+/* .sign-in-page {
+    display: none;
+} */
