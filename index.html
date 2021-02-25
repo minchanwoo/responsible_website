@@ -44,5 +44,26 @@
         </div>
     </section>
     <div class='bg-circule'></div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        /*로그인*/
+        $(document).on('click', '.s-btn', function() {
+            $('.sign-in').addClass('active-sign-in')
+                .siblings('.sign-in').removeClass('active-sign-up')
+        });
+
+        /*회원가입*/
+        $(document).on('click', '.new-btn', function() {
+            $('.sign-in').addClass('active-sign-up')
+                .siblings('.sign-in').removeClass('active-sign-in')
+        });   
+
+        /*메인페이지로 돌아가기*/
+        $(document).ready(function() {
+            $('.cancel a').click(function() {
+                $('.sign-in').removeClass('active-sign-in, active-sign-up')
+            })
+        });
+    </script>
 </body>
 </html>
